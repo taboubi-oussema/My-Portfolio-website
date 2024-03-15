@@ -1,6 +1,7 @@
 body {
   background-color: #eee;
-  margin: 0% 5%;
+  margin: 0;
+  padding: 0;
 }
 .textStyle {
   font-family: Sora;
@@ -18,7 +19,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 100px;
+  padding: 0 5%;
+
 }
 .container_Nav li {
   padding: 8px 12px;
@@ -233,4 +235,36 @@ section.myProjects .font3 {
   text-transform: uppercase;
   text-align: center;
   color: #fff;
+  font-family: cursive;
+}
+/* --------------------------------------------------------------------- */
+footer {
+  height: 100px;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+footer .text1 {
+  font-family: Sora;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+footer .text2 {
+  font-family: Sora;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  text-align: center;
+  line-height: 22px;
 }
