@@ -1,0 +1,183 @@
+body {
+  background-color: #eee;
+  margin: 0% 5%;
+}
+.textStyle {
+  font-family: Sora;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
+  color: #000000;
+  text-decoration: none;
+}
+/* --------------------------------------------------------------------- */
+
+.container_Nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.container_Nav li {
+  padding: 8px 12px;
+}
+
+.container_Nav button {
+  background: #000000;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  height: 45px;
+}
+.container_Nav button p {
+  font-family: Sora;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+/* --------------------------------------------------------------------- */
+section p .fontText {
+  font-family: Sora;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+section.intro div a .social_media {
+  padding: 16px;
+  border-radius: 4px;
+  background: #fff;
+  border: 1px solid black;
+}
+
+section.intro div a .social_media:hover {
+  background: #000000;
+  transition: 0.5s;
+  color: #fff;
+}
+section.mySkills div.boxSkills {
+  width: 186px;
+  height: 186px;
+  background: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+section.mySkills div .textSkills {
+  font-family: Sora;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
+}
+section.mySkills div.boxSkills:hover {
+  background-color: #000000;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+section.mySkills div.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 55px;
+  justify-content: center;
+}
+/* --------------------------------------------------------------------- */
+
+section.myExperience .container {
+  width: 90%;
+  height: 192px;
+  border-radius: 10px;
+  border: 1px solid #27272a;
+  margin-bottom: 50px;
+  padding: 15px;
+}
+section.myExperience .container:hover {
+  background: #27272a;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+section.myExperience .headerExDate {
+  font-family: Sora;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #d4d4d8;
+  padding-left: 15px;
+  line-height: 30px;
+}
+section.myExperience .headerExText {
+  display: flex;
+  flex: 1;
+  font-family: Sora;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #ffffff;
+}
+/* --------------------------------------------------------------------- */
+section.aboutMe .TextAboutMe {
+  font-family: Sora;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #71717a;
+}
+/* --------------------------------------------------------------------- */
+section.myProjects .container {
+  height: 300px;
+  width: 400px;
+}
+section.myProjects .font1 {
+  font-family: Sora;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+section.myProjects .font2 {
+  font-family: Sora;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #ffffff;
+}
+section.myProjects .font3 {
+  font-family: Sora;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #71717a;
+}
+/* --------------------------------------------------------------------- */
+.certificate{
+  width: 270px;
+  height: 186px;
+  border: 2px solid black;
+}
