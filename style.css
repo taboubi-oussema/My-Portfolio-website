@@ -107,6 +107,7 @@ section.myExperience .container {
   border: 1px solid #27272a;
   margin-bottom: 50px;
   padding: 15px;
+  overflow: hidden;
 }
 section.myExperience .container:hover {
   background: #27272a;
@@ -176,8 +177,46 @@ section.myProjects .font3 {
   color: #71717a;
 }
 /* --------------------------------------------------------------------- */
-.certificate{
+.certificate {
   width: 270px;
   height: 186px;
   border: 2px solid black;
+}
+
+.wrapper:hover {
+  transition: 0.4s;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 272px;
+  height: 190px;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.wrapper {
+  position: relative;
+}
+.effect:hover {
+  opacity: 1;
+}
+.effect > * {
+  transform: translateY(25px);
+  transition: transform 0.7s;
+}
+.effect:hover > * {
+  transform: translateY(0px);
+}
+
+.effect h4 {
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
 }
