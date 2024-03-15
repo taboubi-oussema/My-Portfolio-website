@@ -198,7 +198,8 @@ section.myProjects .font3 {
   width: 272px;
   height: 190px;
   opacity: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.8);
+  flex-direction: column;
 }
 
 .wrapper {
@@ -219,4 +220,5 @@ section.myProjects .font3 {
   font-size: 40px;
   text-transform: uppercase;
   text-align: center;
+  color: #fff;
 }
