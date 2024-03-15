@@ -145,9 +145,21 @@ section.aboutMe .TextAboutMe {
   color: #71717a;
 }
 /* --------------------------------------------------------------------- */
+section.myProjects {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+  padding-bottom: 40px;
+}
+
 section.myProjects .container {
-  height: 300px;
-  width: 400px;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  gap: 40px;
 }
 section.myProjects .font1 {
   font-family: Sora;
