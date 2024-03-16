@@ -20,7 +20,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 5%;
-
 }
 .container_Nav li {
   padding: 8px 12px;
@@ -45,7 +44,7 @@ body {
 }
 
 /* --------------------------------------------------------------------- */
-section p .fontText {
+section .fontText {
   font-family: Sora;
   font-style: normal;
   font-size: 48px;
@@ -54,14 +53,14 @@ section p .fontText {
   color: #000000;
 }
 
-section.intro div a .social_media {
+a .social_media {
   padding: 16px;
   border-radius: 4px;
   background: #fff;
   border: 1px solid black;
 }
 
-section.intro div a .social_media:hover {
+a .social_media:hover {
   background: #000000;
   transition: 0.5s;
   color: #fff;
@@ -181,7 +180,7 @@ section.myProjects .font2 {
   text-align: left;
   color: #ffffff;
 }
-section.myProjects .font3 {
+section .font3 {
   font-family: Sora;
   font-style: normal;
   font-weight: 400;
@@ -237,6 +236,63 @@ section.myProjects .font3 {
   color: #fff;
   font-family: cursive;
 }
+/* --------------------------------------------------------------------- */
+section.contactMe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+section.contactMe .text {
+  font-family: Sora;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+section.contactMe .container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.contactMe input,
+textarea {
+  font-family: Sora;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #71717a;
+  padding: 15px;
+  border: #000000 1px solid;
+  border-radius: 5px;
+}
+
+section.contactMe button {
+  font-family: Sora;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  color: #fff;
+  padding: 14px;
+  border: #444 1px solid;
+  border-radius: 5px;
+  background: linear-gradient(160deg, #666, #444);
+}
+section.contactMe button:hover {
+  color: #fff;
+  background: linear-gradient(160deg, #666, #444);
+  text-shadow: 0px 0px 4px #ccc;
+  box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+  transition-delay: 0.1s;
+  cursor: pointer;
+}
+
 /* --------------------------------------------------------------------- */
 footer {
   height: 100px;
