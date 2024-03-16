@@ -324,3 +324,9 @@ footer .text2 {
   text-align: center;
   line-height: 22px;
 }
+
+/* @media (min-width: 3000px) {
+  * {
+    font-size: 100px;
+  }
+} */
