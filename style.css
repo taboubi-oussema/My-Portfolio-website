@@ -322,9 +322,47 @@ footer .text2 {
   text-align: center;
   line-height: 22px;
 }
+section.intro .paragraph {
+  line-height: 36px;
+}
 
-/* @media (min-width: 3000px) {
-  * {
-    font-size: 100px;
+@media (min-width: 3000px) {
+  section.intro .fontText {
+    font-size: calc(20px * 6);
+    line-height: calc(56px * 3);
   }
-} */
+  section.intro a {
+    font-size: 40px;
+  }
+  section.intro .social_media {
+    border-radius: 16px;
+  }
+  section.intro i {
+    padding: 40px;
+  }
+  section.intro .paragraph {
+    font-size: 40px;
+    width: calc(700px * 2);
+    line-height: 80px;
+  }
+  section.intro img,
+  section.aboutMe img {
+    width: calc(700px * 2);
+  }
+  .container_Nav li {
+    padding: 16px 24px;
+  }
+  .textStyle {
+    font-size: 50px;
+  }
+  .container_Nav img {
+    height: 60px;
+    width: 40px;
+  }
+  .container_Nav button p {
+    font-size: 60px;
+  }
+  .container_Nav button {
+    height: 90px;
+  }
+}
