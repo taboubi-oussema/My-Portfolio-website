@@ -150,7 +150,6 @@ section.myProjects {
   background-color: black;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 55px;
   padding-bottom: 40px;
@@ -158,9 +157,8 @@ section.myProjects {
 
 section.myProjects .container {
   display: flex;
-  width: 90%;
-  justify-content: space-between;
   gap: 40px;
+  justify-content: center;
 }
 section.myProjects .font1 {
   font-family: Sora;
