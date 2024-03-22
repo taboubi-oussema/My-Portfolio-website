@@ -137,10 +137,11 @@ section.myExperience .headerExText {
 /* --------------------------------------------------------------------- */
 
 section.aboutMe{
-  display: grid;
+  display:flex;
   padding: 0 5%;
-  grid-template-columns:repeat(auto-fit,minmax(min(22rem,100%), 1fr));
-  grid-gap: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 section.aboutMe .TextAboutMe {
@@ -150,6 +151,7 @@ section.aboutMe .TextAboutMe {
   font-size: 16px;
   letter-spacing: 0.02em;
   color: #71717a;
+  
 }
 /* --------------------------------------------------------------------- */
 section.myProjects {
