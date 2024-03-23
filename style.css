@@ -357,15 +357,10 @@ footer .text2 {
 section.intro .paragraph {
   line-height: 36px;
 }
-
-@media (max-width: 1300px) {
-  .intro {
-    font-size: 40px;
-  }
-  section.intro .paragraph {
-    line-height: 70px;
-    font-size: 20px;
-  }
+.container__input {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 @media (min-width: 3000px) {
@@ -408,19 +403,31 @@ section.intro .paragraph {
     height: 90px;
   }
 }
-
-
-
-@media (max-width: 800px) {
+.photo {
+  width: 700px;
+}
+@media (max-width: 900px) {
   .hideOnMobile {
     display: none;
   }
   .menu-button {
     display: block;
   }
+  .photo {
+    width: 500px;
+  }
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .sidebar {
     width: 100%;
+  }
+  form {
+    margin-left: 40px;
+    width: 300px;
+  }
+  .container__input {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
   }
 }
