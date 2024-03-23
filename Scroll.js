@@ -1,15 +1,17 @@
-function scrollToProjects() {
-  document.getElementById("Projects").scrollIntoView({ behavior: "smooth" });
+function scrollToSlide(slide) {
+  document.getElementById(slide).scrollIntoView({ behavior: "smooth" });
 }
-function scrollToskills() {
-  document.getElementById("skills").scrollIntoView({ behavior: "smooth" });
+function showSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.style.display = "flex";
 }
-function scrollToAboutMe() {
-  document.getElementById("aboutMe").scrollIntoView({ behavior: "smooth" });
+function hideSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.style.display = "none";
 }
-function scrollToCertificate() {
-  document.getElementById("certificate").scrollIntoView({ behavior: "smooth" });
-}
-function scrollToContactMe() {
-  document.getElementById("contactMe").scrollIntoView({ behavior: "smooth" });
+
+function scrollAndHide(slide) {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.style.display = "none";
+  document.getElementById(slide).scrollIntoView({ behavior: "smooth" });
 }

@@ -1,9 +1,37 @@
-body {
-  background-color: #eee;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: Sora;
 }
-.textStyle {
+body {
+  background-color: #eee;
+}
+
+/* --------------------------------------------------------------------- */
+
+header {
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  padding: 0 20px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header p,
+nav a {
+  transition: all 0.3s ease 0s;
   font-family: Sora;
   font-style: normal;
   font-weight: 700;
@@ -13,36 +41,31 @@ body {
   color: #000000;
   text-decoration: none;
 }
-/* --------------------------------------------------------------------- */
-
-.container_Nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 5%;
+nav a:hover {
+  color: rgba(0, 0, 0, 0.4);
 }
-.container_Nav li {
-  padding: 8px 12px;
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
-
-.container_Nav button {
-  background: #000000;
-  border-radius: 4px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  gap: 12px;
-  height: 45px;
-}
-.container_Nav button p {
-  font-family: Sora;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  letter-spacing: 0.02em;
-  color: #ffffff;
+.sidebar li {
+  margin: 20px;
 }
 
+.menu-button {
+  display: none;
+}
 /* --------------------------------------------------------------------- */
 section .fontText {
   font-family: Sora;
@@ -136,8 +159,8 @@ section.myExperience .headerExText {
 }
 /* --------------------------------------------------------------------- */
 
-section.aboutMe{
-  display:flex;
+section.aboutMe {
+  display: flex;
   padding: 0 5%;
   gap: 2rem;
   flex-wrap: wrap;
@@ -151,7 +174,7 @@ section.aboutMe .TextAboutMe {
   font-size: 16px;
   letter-spacing: 0.02em;
   color: #71717a;
-  
+  padding-bottom: 20px;
 }
 /* --------------------------------------------------------------------- */
 section.myProjects {
@@ -161,6 +184,7 @@ section.myProjects {
   align-items: center;
   gap: 55px;
   padding-bottom: 40px;
+  justify-content: center;
 }
 
 section.myProjects .container {
@@ -334,6 +358,16 @@ section.intro .paragraph {
   line-height: 36px;
 }
 
+@media (max-width: 1300px) {
+  .intro {
+    font-size: 40px;
+  }
+  section.intro .paragraph {
+    line-height: 70px;
+    font-size: 20px;
+  }
+}
+
 @media (min-width: 3000px) {
   section.intro .fontText {
     font-size: calc(20px * 6);
@@ -374,4 +408,19 @@ section.intro .paragraph {
     height: 90px;
   }
 }
- 
+
+
+
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+}

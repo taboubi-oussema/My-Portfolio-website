@@ -14,37 +14,97 @@
   </head>
   <body style="display: flex; flex-direction: column; gap: 70px">
     <!--------------------------------------------------------------------------------->
-    <nav class="container_Nav">
-      <div style="display: flex; align-items: center; gap: 12px">
-        <img src="./images/Vector.png" alt="logo" width="20" />
-        <p class="textStyle">Personal</p>
+    <header>
+      <div class="logo">
+        <img src="./images/Vector.png" alt="logo" />
+        <p>Personal</p>
       </div>
-      <ul style="display: flex; list-style: none">
-        <li>
-          <a href="#" onclick="scrollToAboutMe()" class="textStyle">About Me</a>
-        </li>
-        <li>
-          <a href="#" onclick="scrollToskills()" class="textStyle">Skills</a>
-        </li>
-        <li>
-          <a href="#" onclick="scrollToProjects()" class="textStyle">project</a>
-        </li>
-        <li>
-          <a href="#" onclick="scrollToCertificate()" class="textStyle"
-            >certificate</a
-          >
-        </li>
-        <li>
-          <a href="#" onclick="scrollToContactMe()" class="textStyle"
-            >Contant Me</a
-          >
-        </li>
-      </ul>
-      <button>
-        <p>Resume</p>
-        <img src="./images/Icon.png" alt="icon" />
-      </button>
-    </nav>
+      <nav>
+        <ul class="sidebar">
+          <li onclick="hideSidebar()">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="26"
+                viewBox="0 96 960 960"
+                width="26"
+              >
+                <path
+                  d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="scrollAndHide('aboutMe')" class="textStyle"
+              >About Me</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="scrollAndHide('skills')" class="textStyle"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="scrollAndHide('Projects')" class="textStyle"
+              >project</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="scrollAndHide('certificate')" class="textStyle"
+              >certificate</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="scrollAndHide('contactMe')" class="textStyle"
+              >Contant Me</a
+            >
+          </li>
+        </ul>
+        <ul>
+          <li class="hideOnMobile">
+            <a href="#" onclick="scrollToSlide('aboutMe')" class="textStyle"
+              >About Me</a
+            >
+          </li>
+          <li class="hideOnMobile">
+            <a href="#" onclick="scrollToSlide('skills')" class="textStyle"
+              >Skills</a
+            >
+          </li>
+          <li class="hideOnMobile">
+            <a href="#" onclick="scrollToSlide('Projects')" class="textStyle"
+              >project</a
+            >
+          </li>
+          <li class="hideOnMobile">
+            <a href="#" onclick="scrollToSlide('certificate')" class="textStyle"
+              >certificate</a
+            >
+          </li>
+          <li class="hideOnMobile">
+            <a href="#" onclick="scrollToSlide('contactMe')" class="textStyle"
+              >Contant Me</a
+            >
+          </li>
+          <li class="menu-button" onclick="showSidebar()">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="26"
+                viewBox="0 96 960 960"
+                width="26"
+              >
+                <path
+                  d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
     <!--------------------------------------------------------------------------------->
     <section
       class="intro"
@@ -55,7 +115,7 @@
         justify-content: center;
       "
     >
-      <div>
+      <div class="width">
         <p>
           <span class="fontText" style="font-weight: 400"> Hello I’am</span
           ><span class="fontText" style="font-weight: 700"> Oussama .</span>
@@ -220,9 +280,8 @@
     <!--------------------------------------------------------------------------------->
     <section class="aboutMe" id="aboutMe">
       <img src="./images/Group 1000015845.png" alt="logo" />
-     
 
-       <div style="width: 50%;">
+      <div style="width: 50%">
         <p style="padding-bottom: 50px">
           <span class="fontText" style="font-weight: 400"> About</span
           ><span class="fontText" style="font-weight: 700"> Me </span>
@@ -387,6 +446,13 @@
           <img class="certificate" src="images/certificate/dart.jpg" />
           <div class="effect">
             <h4>dart</h4>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <img class="certificate" src="images/certificate/Docker.jpg" />
+          <div class="effect">
+            <h4>Docker</h4>
           </div>
         </div>
 
