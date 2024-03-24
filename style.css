@@ -160,11 +160,8 @@ section.myExperience .headerExText {
 /* --------------------------------------------------------------------- */
 
 section.aboutMe {
-  display: flex;
-  padding: 0 5%;
-  gap: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(40rem, 100%), 1fr));
 }
 
 section.aboutMe .TextAboutMe {
@@ -199,7 +196,6 @@ section.myProjects .font1 {
   font-size: 48px;
   letter-spacing: -0.02em;
   color: #ffffff;
- 
 }
 section.myProjects .font2 {
   font-family: Sora;
@@ -406,10 +402,8 @@ section.intro .paragraph {
     height: 90px;
   }
 }
-.photo {
-  width: 700px;
-}
-@media (max-width: 900px) {
+
+@media (max-width: 1000px) {
   .hideOnMobile {
     display: none;
   }
@@ -418,6 +412,10 @@ section.intro .paragraph {
   }
   .photo {
     width: 530px;
+  }
+  .center {
+    text-align: center;
+    
   }
 }
 @media (max-width: 600px) {
@@ -434,7 +432,11 @@ section.intro .paragraph {
   footer a {
     font-size: 13px;
   }
-  .photo {
-    width: 400px;
+  section.aboutMe {
+  padding-left: 14px;
+}
+.photo {
+    width: 300px;
   }
+  
 }
