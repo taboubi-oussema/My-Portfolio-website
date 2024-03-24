@@ -199,6 +199,7 @@ section.myProjects .font1 {
   font-size: 48px;
   letter-spacing: -0.02em;
   color: #ffffff;
+ 
 }
 section.myProjects .font2 {
   font-family: Sora;
@@ -209,6 +210,7 @@ section.myProjects .font2 {
   letter-spacing: -0.02em;
   text-align: left;
   color: #ffffff;
+  margin-bottom: 20px;
 }
 section .font3 {
   font-family: Sora;
@@ -218,6 +220,7 @@ section .font3 {
   letter-spacing: 0.02em;
   text-align: left;
   color: #71717a;
+  margin-bottom: 20px;
 }
 /* --------------------------------------------------------------------- */
 .certificate {
@@ -414,20 +417,24 @@ section.intro .paragraph {
     display: block;
   }
   .photo {
-    width: 500px;
+    width: 530px;
   }
 }
 @media (max-width: 600px) {
   .sidebar {
     width: 100%;
   }
-  form {
-    margin-left: 40px;
-    width: 300px;
+
+  section.contactMe input,
+  textarea {
+    width: 350px;
   }
-  .container__input {
-    display: flex;
-    justify-content: flex-start;
-    gap: 5px;
+  footer *.text1,
+  footer *.text2,
+  footer a {
+    font-size: 13px;
+  }
+  .photo {
+    width: 400px;
   }
 }
