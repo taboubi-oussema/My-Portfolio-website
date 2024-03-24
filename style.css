@@ -361,6 +361,9 @@ section.intro .paragraph {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.photo {
+    width: 630px;
+  }
 
 @media (min-width: 3000px) {
   section.intro .fontText {
