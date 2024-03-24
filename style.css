@@ -362,8 +362,8 @@ section.intro .paragraph {
   flex-wrap: wrap;
 }
 .photo {
-    width: 630px;
-  }
+  width: 570px;
+}
 
 @media (min-width: 3000px) {
   section.intro .fontText {
@@ -418,7 +418,6 @@ section.intro .paragraph {
   }
   .center {
     text-align: center;
-    
   }
 }
 @media (max-width: 600px) {
@@ -436,10 +435,9 @@ section.intro .paragraph {
     font-size: 13px;
   }
   section.aboutMe {
-  padding-left: 14px;
-}
-.photo {
+    padding-left: 14px;
+  }
+  .photo {
     width: 300px;
   }
-  
 }
