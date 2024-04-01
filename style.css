@@ -271,6 +271,9 @@ section.contactMe {
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 15px;
+  
+  overflow: scroll;
+  -webkit-scrollbar: none;
 }
 section.contactMe .text {
   font-family: Sora;
